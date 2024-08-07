@@ -13,19 +13,19 @@ export const metadata: Metadata = {
 
 const homeData = [
   {
-    bg: "/bg/1.jpg",
+    bg: "/bg/01.jpg",
     title: "This is a test",
     desc: "This is a test description",
     href: "/",
   },
   {
-    bg: "/bg/2.jpg",
+    bg: "/bg/02.jpg",
     title: "This is a test",
     desc: "This is a test description",
     href: "/",
   },
   {
-    bg: "/bg/3.jpg",
+    bg: "/bg/03.jpg",
     title: "This is a test",
     desc: "This is a test description",
     href: "/",
@@ -37,7 +37,7 @@ const homeData = [
     href: "/",
   },
   {
-    bg: "/bg/5.jpg",
+    bg: "/bg/05.jpg",
     title: "This is a test",
     desc: "This is a test description",
     href: "/",

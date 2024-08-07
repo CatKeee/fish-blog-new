@@ -25,11 +25,9 @@ const Header = () => {
         href={"/"}
         scroll={true}
       >
-        {/* <Icon name="ri:remix-run-fill" size="1.2rem" className="" /> */}
-        {/* <img src="/guofu.svg" alt="logo" className="w-8 h-8" /> */}
         <Avatar className="size-8 rounded-none">
           <AvatarImage src="/guofu.svg" alt="@shadcn" />
-          <AvatarFallback>LOGO</AvatarFallback>
+          <AvatarFallback>K</AvatarFallback>
         </Avatar>
       </Link>
 
