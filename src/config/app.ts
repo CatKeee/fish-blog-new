@@ -20,6 +20,7 @@ interface NavsItem {
   target: boolean;
   scroll: boolean;
   enabled: boolean;
+  prefetch: boolean;
   children: NavsItem[];
 }
 
@@ -41,6 +42,7 @@ const config: Config = {
       target: false,
       enabled: true,
       scroll: true,
+      prefetch: true,
       children: [],
     },
     {
@@ -50,6 +52,7 @@ const config: Config = {
       target: false,
       enabled: true,
       scroll: true,
+      prefetch: true,
       children: [
         // {
         //   title: "About",
@@ -67,6 +70,7 @@ const config: Config = {
       target: false,
       enabled: true,
       scroll: true,
+      prefetch: false,
       children: [],
     },
     {
@@ -76,6 +80,7 @@ const config: Config = {
       target: false,
       enabled: true,
       scroll: true,
+      prefetch: false,
       children: [],
     },
     {
@@ -84,6 +89,7 @@ const config: Config = {
       icon: "ri:information-line",
       target: false,
       enabled: true,
+      prefetch: true,
       scroll: true,
       children: [],
     },

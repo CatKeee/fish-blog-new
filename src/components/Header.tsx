@@ -37,7 +37,7 @@ const Header = () => {
         {AppConfig.navs.map((nav) => {
           return (
             <Link
-              prefetch
+              prefetch={nav.prefetch}
               key={nav.title}
               className={`relative transition-colors hover:text-foreground/80 ${
                 pathname === nav.path ? "text-foreground" : "text-foreground/60"
