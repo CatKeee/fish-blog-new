@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals", "plugin:tailwindcss/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "tailwindcss/no-custom-classname": "off",
+    "react/no-unescaped-entities": "off",
+    "tailwindcss/no-contradicting-classname": "off",
+    "tailwindcss/enforces-shorthand": "off"
+  }
+}
