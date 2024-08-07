@@ -53,7 +53,7 @@ const Projects = () => {
   return (
     <DefaultLayout>
       <div className="">
-        <section className="flex flex-col items-center gap-2 pt-4 sm:pb-12 sm:pt-8">
+        <section className="flex flex-col items-center gap-2 pb-8 pt-4 sm:pb-12 sm:pt-8">
           <h1 className="text-edge-outline text-3xl font-bold">Projects</h1>
           <p className="text-center text-secondary-foreground/60">
             Here are some projects that I have led or participated in.
