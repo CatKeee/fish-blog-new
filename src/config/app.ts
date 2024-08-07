@@ -42,7 +42,7 @@ const config: Config = {
       target: false,
       enabled: true,
       scroll: true,
-      prefetch: true,
+      prefetch: false,
       children: [],
     },
     {
@@ -52,7 +52,7 @@ const config: Config = {
       target: false,
       enabled: true,
       scroll: true,
-      prefetch: true,
+      prefetch: false,
       children: [
         // {
         //   title: "About",
@@ -89,7 +89,7 @@ const config: Config = {
       icon: "ri:information-line",
       target: false,
       enabled: true,
-      prefetch: true,
+      prefetch: false,
       scroll: true,
       children: [],
     },
