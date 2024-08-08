@@ -19,6 +19,12 @@ const homeData = [
     href: "/",
   },
   {
+    bg: "/bg/13.jpg",
+    title: "This is a test",
+    desc: "This is a test description",
+    href: "/",
+  },
+  {
     bg: "/bg/02.jpg",
     title: "This is a test",
     desc: "This is a test description",
@@ -37,13 +43,7 @@ const homeData = [
     href: "/",
   },
   {
-    bg: "/bg/05.jpg",
-    title: "This is a test",
-    desc: "This is a test description",
-    href: "/",
-  },
-  {
-    bg: "/bg/11.jpg",
+    bg: "/bg/17.jpg",
     title: "This is a test",
     desc: "This is a test description",
     href: "/",
@@ -56,9 +56,8 @@ export default function Home() {
       <div className="">
         <section className="flex flex-col gap-8">
           <h1 className="text-edge-outline pt-8 text-center text-4xl font-black transition-[font-size] sm:pt-12 sm:text-6xl">
-            {/* A Programmer <br />
-            Who Loves E-waste */}
-            Hello World
+            A Programmer <br />
+            Who Loves E-waste
           </h1>
           <p className="mx-auto max-w-3xl text-center text-lg text-secondary-foreground/60">
             {/* Although the road is long, it will come; although the task is
@@ -88,39 +87,6 @@ export default function Home() {
                 name="my:gitee-fill"
                 size="1.3rem"
                 className="text-secondary-foreground/80 group-hover:text-[#c01b20]"
-              />
-            </Button>
-            <Button
-              className="group rounded-full"
-              variant={"secondary"}
-              size={"icon"}
-            >
-              <Icon
-                name="ri:steam-fill"
-                size="1.5rem"
-                className="text-secondary-foreground/80 group-hover:text-[#1d3266]"
-              />
-            </Button>
-            <Button
-              className="group rounded-full"
-              variant={"secondary"}
-              size={"icon"}
-            >
-              <Icon
-                name="ri:wechat-fill"
-                size="1.5rem"
-                className="text-secondary-foreground/80 group-hover:text-[#07c160]"
-              />
-            </Button>
-            <Button
-              className="group rounded-full"
-              variant={"secondary"}
-              size={"icon"}
-            >
-              <Icon
-                name="ri:qq-fill"
-                size="1.5rem"
-                className="text-secondary-foreground/80 group-hover:text-[#09f]"
               />
             </Button>
             <Button
@@ -163,17 +129,6 @@ export default function Home() {
             >
               <Icon
                 name="my:csdn-fill"
-                size="1.3rem"
-                className="text-secondary-foreground/80 group-hover:text-[#fc5531]"
-              />
-            </Button>
-            <Button
-              className="group rounded-full"
-              variant={"secondary"}
-              size={"icon"}
-            >
-              <Icon
-                name="my:csdn-simple-fill"
                 size="1.3rem"
                 className="text-secondary-foreground/80 group-hover:text-[#fc5531]"
               />

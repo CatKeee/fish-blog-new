@@ -127,9 +127,9 @@ const About = () => {
                   htmlFor="typescript-progress"
                 >
                   <Icon name="ri:nodejs-line" size="1.1rem" />
-                  NodeJS
+                  React/Vue
                 </Label>
-                <Progress id="typescript-progress" value={40} />
+                <Progress id="typescript-progress" value={60} />
               </div>
             </div>
             <div>
@@ -139,9 +139,9 @@ const About = () => {
                   htmlFor="typescript-progress"
                 >
                   <Icon name="ri:nodejs-line" size="1.1rem" />
-                  NodeJS
+                  MySQL/MongoDB
                 </Label>
-                <Progress id="typescript-progress" value={40} />
+                <Progress id="typescript-progress" value={50} />
               </div>
             </div>
           </div>

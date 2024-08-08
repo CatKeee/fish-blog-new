@@ -7,7 +7,7 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Music",
   description: "123",
 };
 

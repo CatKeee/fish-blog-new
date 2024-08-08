@@ -28,6 +28,8 @@ const logEntries: LogEntry[] = [
   { title: "01", date: "Dec 16, 2022", path: "/bg/06.jpg" },
   { title: "01", date: "Dec 16, 2022", path: "/guofu/06.jpg" },
   { title: "01", date: "Dec 16, 2022", path: "/bg/13.jpg" },
+  { title: "01", date: "Dec 16, 2022", path: "/bg/14.jpg" },
+  { title: "01", date: "Dec 16, 2022", path: "/bg/15.jpg" },
   { title: "01", date: "Dec 16, 2022", path: "/bg/01.jpg" },
   { title: "01", date: "Dec 16, 2022", path: "/guofu/01.jpg" },
   { title: "01", date: "Dec 16, 2022", path: "/bg/04.jpg" },
