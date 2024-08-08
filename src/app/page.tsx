@@ -43,7 +43,7 @@ const homeData = [
     href: "/",
   },
   {
-    bg: "/bg/17.jpg",
+    bg: "/bg/07.jpg",
     title: "This is a test",
     desc: "This is a test description",
     href: "/",
