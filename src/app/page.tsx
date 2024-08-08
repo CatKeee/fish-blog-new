@@ -56,8 +56,9 @@ export default function Home() {
       <div className="">
         <section className="flex flex-col gap-8">
           <h1 className="text-edge-outline pt-8 text-center text-4xl font-black transition-[font-size] sm:pt-12 sm:text-6xl">
-            A Programmer <br />
-            Who Loves E-waste
+            {/* A Programmer <br />
+            Who Loves E-waste */}
+            Hello World
           </h1>
           <p className="mx-auto max-w-3xl text-center text-lg text-secondary-foreground/60">
             {/* Although the road is long, it will come; although the task is
