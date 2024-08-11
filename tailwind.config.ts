@@ -8,6 +8,7 @@ const config = {
     "./components/**/*.{ts,tsx,js,jsx,mdx}",
     "./app/**/*.{ts,tsx,js,jsx,mdx}",
     "./src/**/*.{ts,tsx,js,jsx,mdx}",
+    "./src/styles/tailwind.scss",
   ],
   prefix: "",
   theme: {
@@ -32,6 +33,9 @@ const config = {
       },
     },
     extend: {
+      flex: {
+        "0-0-1": "0 0 100%",
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },

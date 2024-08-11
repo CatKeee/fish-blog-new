@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 // import "@radix-ui/themes/styles.css";
 // import "react-photo-view/dist/react-photo-view.css";
 
-import "./globals.scss";
+import "./../styles/index.scss";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 

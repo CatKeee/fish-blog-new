@@ -28,24 +28,8 @@ const logEntries: LogEntry[] = [
     title: "Generating Open Graph images with Mapbox & Canvas",
   },
   {
-    date: "Apr 20, 2021",
-    title: "Building a mapping platform with React and Mapbox GL",
-  },
-  {
-    date: "Mar 16, 2021",
-    title: "Spring-based Parallax with Framer motion: Step by step",
-  },
-  { date: "Feb 21, 2021", title: "How to create iOS chat bubbles in CSS" },
-  {
-    date: "Feb 15, 2021",
-    title: "Segmented Control for web with Framer Motion",
-  },
-  { date: "Feb 08, 2021", title: "My favorite productivity hack: git newmr" },
-  { date: "Feb 05, 2021", title: "Page Transitions with Framer Motion" },
-  { date: "Jan 31, 2021", title: "Animated music bars with CSS" },
-  {
-    date: "Jan 22, 2021",
-    title: "Building my personal website with Next.js backed by Notion",
+    date: "May 10, 2021",
+    title: "Generating Open Graph images with Mapbox & Canvas",
   },
 ];
 
@@ -62,7 +46,11 @@ const Projects = () => {
         <section className="mx-auto max-w-screen-lg animate-in">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {logEntries.map((item, index) => (
-              <div key={index} className="flex gap-4 rounded border p-3">
+              <Link
+                href={`/projects/${index}`}
+                key={index}
+                className="flex gap-4 rounded border p-4 hover:shadow-md"
+              >
                 <div>
                   <div className="rounded bg-secondary p-1">
                     <Icon name="ri:apps-line" size="1.6rem" />
@@ -76,7 +64,7 @@ const Projects = () => {
                     Here are some projects that I have led or participated in.
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

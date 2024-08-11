@@ -3,8 +3,6 @@ import DefaultLayout from "@/layouts/default";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 import Image from "next/image";
-import { PhotoProvider, PhotoView } from "react-photo-view";
-import "react-photo-view/dist/react-photo-view.css";
 
 export const metadata: Metadata = {
   title: "Music",

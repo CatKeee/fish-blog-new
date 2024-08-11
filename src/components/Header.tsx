@@ -15,7 +15,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between border-b p-2 backdrop-blur">
+    <header className="sticky top-0 z-50 flex items-center justify-between border-b bg-background/50 p-2 backdrop-blur">
       <div className="flex w-1/5 sm:hidden">
         <NavDrawer />
       </div>
@@ -38,7 +38,9 @@ const Header = () => {
               prefetch={nav.prefetch}
               key={nav.title}
               className={`relative transition-colors hover:text-foreground/80 ${
-                pathname === nav.path ? "text-foreground" : "text-foreground/60"
+                nav.path.includes(pathname) || pathname.includes(nav.path)
+                  ? "text-foreground"
+                  : "text-foreground/60"
               }`}
               href={nav.path}
               scroll={nav.scroll}

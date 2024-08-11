@@ -1,0 +1,40 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
+import marked from "./../_utils/highlight";
+import { Fancybox } from "@fancyapps/ui";
+import { addDataFancybox } from "./../_utils/fancybox";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+interface PostContent {
+  content: string;
+}
+
+const PostContent: React.FC<PostContent> = (post: PostContent) => {
+  const [content, setContent] = useState<string | Promise<string>>(
+    marked(post.content),
+  );
+
+  useEffect(() => {
+    getContent();
+  });
+  const getContent = async () => {
+    let result = await marked(post.content);
+    setContent(addDataFancybox(result));
+    Fancybox.bind("[data-fancybox]", {
+      animated: true,
+      groupAll: true,
+    });
+  };
+
+  return (
+    <>
+      <div
+        className="post-content-container"
+        dangerouslySetInnerHTML={{ __html: content }}
+      ></div>
+    </>
+  );
+};
+
+export default PostContent;

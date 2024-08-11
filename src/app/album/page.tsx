@@ -1,26 +1,18 @@
-"use client";
+import type { Metadata } from "next";
 
-// import type { Metadata } from "next";
 import DefaultLayout from "@/layouts/default";
 import Link from "next/link";
 import Icon from "@/components/Icon";
-import Image from "next/image";
-import { PhotoProvider, PhotoView } from "react-photo-view";
+import AlbumContent from "./_components/content";
+
 import "react-photo-view/dist/react-photo-view.css";
 
-// export const metadata: Metadata = {
-//   title: "Projects",
-//   description: "123",
-// };
+export const metadata: Metadata = {
+  title: "Album",
+  description: "Various kinds of pictures are stored here.",
+};
 
-interface LogEntry {
-  title: string;
-  date: string;
-  path: string;
-  description?: string;
-}
-
-const logEntries: LogEntry[] = [
+const albumList: AlbumItem[] = [
   { title: "01", date: "Dec 16, 2022", path: "/guofu/12.jpg" },
   { title: "01", date: "Dec 16, 2022", path: "/bg/09.jpg" },
   { title: "01", date: "Dec 16, 2022", path: "/bg/03.jpg" },
@@ -51,11 +43,6 @@ const logEntries: LogEntry[] = [
   { title: "01", date: "Dec 16, 2022", path: "/bg/10.jpg" },
   { title: "01", date: "Dec 16, 2022", path: "/guofu/13.jpg" },
   { title: "01", date: "Dec 16, 2022", path: "/bg/05.jpg" },
-
-  // { title: "01", date: "Dec 16, 2022", path: "/guofu/avatar.png" },
-  // { title: "01", date: "Dec 16, 2022", path: "/guofu/guofu.svg" },
-  // { title: "01", date: "Dec 16, 2022", path: "/guofu/hb-white.png" },
-  // { title: "01", date: "Dec 16, 2022", path: "/guofu/hb.png" },
 ];
 
 const Album = () => {
@@ -70,27 +57,7 @@ const Album = () => {
         </section>
         <section className="mx-auto max-w-screen-lg animate-in">
           <div className="columns-1 gap-px overflow-hidden rounded sm:columns-2 md:columns-3 lg:columns-4">
-            <PhotoProvider>
-              {logEntries.map((item, index) => (
-                <div
-                  key={index}
-                  className="focus group relative mb-px break-inside-avoid overflow-hidden"
-                >
-                  <PhotoView src={item.path}>
-                    <Image
-                      src={item.path}
-                      alt="Photo by Drew Beamer"
-                      priority
-                      fill
-                      className="!static bg-muted object-contain"
-                    />
-                  </PhotoView>
-                  <p className="absolute bottom-0 w-full translate-y-full bg-black/50 p-2 leading-none text-white transition-transform group-hover:translate-y-0">
-                    {item.date}
-                  </p>
-                </div>
-              ))}
-            </PhotoProvider>
+            <AlbumContent albums={albumList} />
           </div>
         </section>
       </div>
