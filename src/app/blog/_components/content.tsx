@@ -30,7 +30,7 @@ const PostContent: React.FC<PostContent> = (post: PostContent) => {
   return (
     <>
       <div
-        className="post-content-container"
+        className="post-content-container prose dark:prose-invert prose-pre:m-0 prose-pre:p-0"
         dangerouslySetInnerHTML={{ __html: content }}
       ></div>
     </>
