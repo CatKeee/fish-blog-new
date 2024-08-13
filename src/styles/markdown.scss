@@ -1,11 +1,9 @@
 .post-content-container {
-  @apply leading-7;
-
   code {
     @apply rounded text-sm leading-5;
   }
 
   img {
-    @apply mx-auto my-3 w-auto rounded;
+    @apply mx-auto w-auto rounded;
   }
 }

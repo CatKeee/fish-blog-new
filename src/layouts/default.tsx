@@ -10,9 +10,12 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({
   ...props
 }) => {
   return (
-    <div>
+    <div className="relative flex min-h-screen flex-col">
       <Header />
-      <main className={`mx-auto max-w-screen-xl p-4 ${className}`} {...props}>
+      <main
+        className={`mx-auto max-w-screen-xl flex-1 p-4 ${className}`}
+        {...props}
+      >
         {children}
       </main>
       <Footer />
