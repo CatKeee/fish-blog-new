@@ -30,7 +30,7 @@ const PostPage = async ({ params }: PostProps) => {
 
   return (
     <DefaultLayout>
-      <div className="relative mx-auto max-w-screen-md">
+      <div className="relative mx-auto w-full max-w-screen-md">
         <BackButton />
         <div className="mb-4 mt-4">
           <h1 className="text-2xl font-bold">{post.title}</h1>
