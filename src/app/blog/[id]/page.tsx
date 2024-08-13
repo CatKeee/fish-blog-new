@@ -1,6 +1,6 @@
 import DefaultLayout from "@/layouts/default";
 import PostContent from "../_components/content";
-import Icon from "@/components/Icon";
+import BackButton from "@/components/Back";
 
 interface PostProps {
   params: {
@@ -312,10 +312,7 @@ const PostPage = async ({ params }: PostProps) => {
   return (
     <DefaultLayout>
       <div className="relative mx-auto max-w-screen-md">
-        <div className="flex cursor-pointer items-center gap-1 underline underline-offset-4 hover:opacity-50">
-          <Icon name="ri:arrow-right-s-line" />
-          <span className="font-mono">cd ..</span>
-        </div>
+        <BackButton />
         <div className="mb-4 mt-4">
           <h1 className="text-2xl font-bold">{post.title}</h1>
           <p className="opacity-50">Jan 22, 2024</p>
