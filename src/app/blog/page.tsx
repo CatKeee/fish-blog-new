@@ -16,7 +16,7 @@ interface LogEntry {
 }
 
 const logEntries: LogEntry[] = [
-  { id: 1, date: "Dec 16, 2022", title: "Using the Strava API with Next.js" },
+  { id: 1, date: "Dec 16, 2022", title: "react 入门教程" },
   {
     id: 2,
     date: "Dec 18, 2021",
