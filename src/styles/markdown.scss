@@ -1,8 +1,6 @@
 .post-content-container {
-  @apply w-full;
-
   pre code {
-    @apply relative overflow-x-auto break-words rounded leading-5;
+    @apply relative overflow-x-auto break-words rounded;
   }
 
   pre {

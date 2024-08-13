@@ -13,7 +13,7 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({
     <div className="relative flex min-h-screen w-full flex-col">
       <Header />
       <main
-        className={`mx-auto max-w-screen-xl flex-1 p-4 ${className}`}
+        className={`mx-auto w-full max-w-screen-xl flex-1 p-4 ${className}`}
         {...props}
       >
         {children}
