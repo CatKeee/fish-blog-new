@@ -56,7 +56,7 @@ export default function Home() {
     <DefaultLayout>
       <div className="">
         <section className="flex flex-col gap-8">
-          <Alert className="border-blue-500 bg-blue-50 text-blue-500">
+          <Alert className="border-blue-500 bg-blue-50 text-blue-500 dark:bg-blue-950">
             <RocketIcon className="h-4 w-4 !text-blue-500" />
             <AlertTitle>Heads up!</AlertTitle>
             <AlertDescription>
