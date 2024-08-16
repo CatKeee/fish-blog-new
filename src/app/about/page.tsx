@@ -22,8 +22,8 @@ const About = () => {
           </p>
         </section>
         <section className="mx-auto flex max-w-screen-sm flex-col gap-6 animate-in">
-          <div className="flex gap-4">
-            <Avatar className="size-16 bg-muted p-1">
+          <div className="flex gap-4 rounded-xl bg-neutral-50 p-4 dark:bg-neutral-800">
+            <Avatar className="size-16 bg-neutral-100 p-1 dark:bg-neutral-700">
               <AvatarImage src="/guofu/hb.png" alt="@shadcn" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
@@ -95,7 +95,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-2">
             <div>
               <div className="flex flex-col gap-2">
                 <Label
@@ -115,7 +115,7 @@ const About = () => {
                   htmlFor="typescript-progress"
                 >
                   <Icon name="ri:nodejs-line" size="1.1rem" />
-                  NodeJS
+                  NodeJS/PHP/Java
                 </Label>
                 <Progress id="typescript-progress" value={40} />
               </div>
@@ -139,7 +139,7 @@ const About = () => {
                   htmlFor="typescript-progress"
                 >
                   <Icon name="ri:nodejs-line" size="1.1rem" />
-                  MySQL/MongoDB
+                  MySQL/MongoDB/PostgreSQL
                 </Label>
                 <Progress id="typescript-progress" value={50} />
               </div>

@@ -5,6 +5,7 @@ import marked from "./../_utils/highlight";
 import { Fancybox } from "@fancyapps/ui";
 import { addDataFancybox } from "./../_utils/fancybox";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import "highlight.js/styles/atom-one-dark.css"; // 选择一个 highlight.js 主题
 
 interface PostContent {
   content: string;

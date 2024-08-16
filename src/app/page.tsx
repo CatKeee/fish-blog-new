@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import DefaultLayout from "@/layouts/default";
 import { Button } from "@/components/ui/button";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { RocketIcon } from "@radix-ui/react-icons";
+import DefaultLayout from "@/layouts/default";
 import Icon from "@/components/Icon";
 import Image from "next/image";
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-
 export const metadata: Metadata = {
   title: "Home",
-  description: "123",
+  description: "A Programmer Who Loves E-waste",
 };
 
 const homeData = [
@@ -55,6 +56,14 @@ export default function Home() {
     <DefaultLayout>
       <div className="">
         <section className="flex flex-col gap-8">
+          <Alert className="border-blue-500 bg-blue-50 text-blue-500">
+            <RocketIcon className="h-4 w-4 !text-blue-500" />
+            <AlertTitle>Heads up!</AlertTitle>
+            <AlertDescription>
+              The website is under development, please stay tuned...
+            </AlertDescription>
+          </Alert>
+
           <h1 className="text-edge-outline pt-8 text-center text-4xl font-black transition-[font-size] sm:pt-12 sm:text-6xl">
             A Programmer <br />
             Who Loves E-waste

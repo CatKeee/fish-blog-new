@@ -1,6 +1,6 @@
 .post-content-container {
   pre code {
-    @apply relative overflow-x-auto break-words rounded;
+    @apply relative overflow-x-auto break-words rounded rounded-se-none rounded-ss-none;
   }
 
   pre {
@@ -8,7 +8,7 @@
   }
 
   img {
-    @apply mx-auto w-auto max-w-full rounded;
+    @apply mx-auto my-4 w-auto max-w-full rounded;
   }
 
   .inline-code {

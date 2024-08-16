@@ -12,7 +12,7 @@ export const posts: Post[] = [
     title: "适用于React且支持渲染svg字符串的图标组件",
     desc: "",
     content: `
-svg图标可以直接从[https://icones.js.org/](https://icones.js.org/)获取json格式，所以你的图标库理论上可以非常丰富。具体操作如下：
+svg图标可以直接从[icones](https://icones.js.org/)获取json格式，所以你的图标库理论上可以非常丰富。具体操作如下：
 
 找到自己喜欢的图标库之后，点击右上角的菜单按钮
 ![WX20240803-103602@2x.png][1]
@@ -139,7 +139,7 @@ function TodoItem({ todo, onToggle, onDelete }: TodoItemProps) {
 const styles = {
     container: {
         display: 'flex',
-        alignItems: 'center',
+        "align-items": 'center',
         marginBottom: '8px',
     },
 };
