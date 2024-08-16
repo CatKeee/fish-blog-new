@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { posts } from "@/assets/posts";
+import { formatDate } from "./_utils/formatDate";
 import DefaultLayout from "@/layouts/default";
 import Link from "next/link";
-import { formatDate } from "./_utils/formatDate";
 
 export const metadata: Metadata = {
   title: "Blog",
