@@ -1,15 +1,16 @@
 "use client";
 
-import React from "react";
-import ThemeToggle from "./ThemeToggle";
 import Link from "next/link";
-import Icon from "./Icon";
+import { usePathname } from "next/navigation";
+import React from "react";
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import AppConfig from "@/config/app";
-import GlobalSearch from "./Search";
+
+import Icon from "./Icon";
 import NavDrawer from "./NavDrawer";
 import QuickSearch from "./QuickSearch";
-import { usePathname } from "next/navigation";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const pathname = usePathname();

@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import marked from "./../_utils/highlight";
-import { Fancybox } from "@fancyapps/ui";
-import { addDataFancybox } from "./../_utils/fancybox";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import "highlight.js/styles/atom-one-dark.css"; // 选择一个 highlight.js 主题
+
+import { Fancybox } from "@fancyapps/ui";
+import React, { useEffect, useState } from "react";
+
+import { addDataFancybox } from "./../_utils/fancybox";
+import marked from "./../_utils/highlight";
 
 interface PostContent {
   content: string;
@@ -20,7 +22,7 @@ const PostContent: React.FC<PostContent> = (post: PostContent) => {
     getContent();
   });
   const getContent = async () => {
-    let result = await marked(post.content);
+    const result = await marked(post.content);
     setContent(addDataFancybox(result));
     Fancybox.bind("[data-fancybox]", {
       animated: true,

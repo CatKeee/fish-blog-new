@@ -1,11 +1,13 @@
 import type { Metadata, ResolvingMetadata } from "next";
-import { posts, type Post } from "@/assets/posts";
 import { notFound } from "next/navigation";
+import React from "react";
 
-import DefaultLayout from "@/layouts/default";
-import PostContent from "../_components/content";
+import { type Post, posts } from "@/assets/posts";
 import BackButton from "@/components/Back";
-import Icon from "@/components/Icon";
+import DefaultLayout from "@/layouts/default";
+
+import PostContent from "../_components/content";
+import { formatDate } from "../_utils/formatDate";
 
 export const generateMetadata = async (
   { params }: PostProps,
@@ -33,7 +35,7 @@ interface PostProps {
 
 // 模拟获取文章详情的函数
 const getPostData = async (id: string): Promise<Post> => {
-  return new Promise((resolve, rejects) => {
+  return new Promise((resolve) => {
     const result = posts.find((post) => post.id === parseInt(id));
     if (result) {
       resolve(result);
@@ -55,7 +57,7 @@ const PostPage = async ({ params }: PostProps) => {
         <BackButton />
         <div className="mb-4 mt-4">
           <h1 className="text-2xl font-bold">{post.title}</h1>
-          <p className="opacity-50">{post.create_time}</p>
+          <p className="opacity-50">{formatDate(post.create_time)}</p>
         </div>
         <PostContent content={post.content} />
         {/* <div className="mt-4 opacity-60">

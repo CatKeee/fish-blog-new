@@ -80,7 +80,7 @@ export default Icon;
   },
   {
     id: 2,
-    title: "React框架Todo案例",
+    title: "React框架Todo案例(AI生成)",
     desc: "",
     content: `
   将这个待办事项应用转换为 TypeScript 版本可以帮助你更好地理解 TypeScript 在 React 中的应用。TypeScript 提供了类型检查和自动补全功能，能够有效提高代码的安全性和可维护性。以下是完整的 TypeScript 版教程。
@@ -298,7 +298,7 @@ export default App;
   },
   {
     id: 3,
-    title: "React入门语法教程",
+    title: "React入门语法教程(AI生成)",
     desc: "",
     content: `
     好的，下面是一个使用 TypeScript 编写的 React 基础语法教程。我们将涵盖组件、JSX、属性和状态、事件处理、条件渲染、列表渲染、表单处理、生命周期方法和 Hooks。

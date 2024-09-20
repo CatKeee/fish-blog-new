@@ -1,23 +1,16 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { EmblaOptionsType } from "embla-carousel";
-import Icon from "@/components/Icon";
-import DefaultLayout from "@/layouts/default";
-import BackButton from "@/components/Back";
-import ProjectCarousel from "../_components/ProjectCarousel";
+import React from "react";
 
-interface PostProps {
-  params: {
-    id: string;
-  };
-}
+import BackButton from "@/components/Back";
+import DefaultLayout from "@/layouts/default";
+
+import ProjectCarousel from "../_components/ProjectCarousel";
 
 const OPTIONS: EmblaOptionsType = {};
 const SLIDE_COUNT = 10;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
-const PostPage = async ({ params }: PostProps) => {
-  const { id } = params;
-
+const PostPage = async () => {
   // 获取文章数据
 
   return (

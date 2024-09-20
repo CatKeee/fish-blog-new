@@ -1,11 +1,13 @@
+import { RocketIcon } from "@radix-ui/react-icons";
 import type { Metadata } from "next";
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import React from "react";
+
+import Icon from "@/components/Icon";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { RocketIcon } from "@radix-ui/react-icons";
+import { Button } from "@/components/ui/button";
 import DefaultLayout from "@/layouts/default";
-import Icon from "@/components/Icon";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Home",

@@ -1,5 +1,5 @@
-import { marked, Renderer, MarkedOptions } from "marked";
 import hljs from "highlight.js";
+import { marked, MarkedOptions, Renderer } from "marked";
 
 // 创建 renderer 实例
 const renderer = new Renderer();

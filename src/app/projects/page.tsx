@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import DefaultLayout from "@/layouts/default";
 import Link from "next/link";
+import React from "react";
+
 import Icon from "@/components/Icon";
+import DefaultLayout from "@/layouts/default";
 
 export const metadata: Metadata = {
   title: "Projects",

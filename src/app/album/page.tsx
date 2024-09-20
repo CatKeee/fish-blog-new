@@ -1,11 +1,11 @@
+import "react-photo-view/dist/react-photo-view.css";
+
 import type { Metadata } from "next";
+import React from "react";
 
 import DefaultLayout from "@/layouts/default";
-import Link from "next/link";
-import Icon from "@/components/Icon";
-import AlbumContent from "./_components/content";
 
-import "react-photo-view/dist/react-photo-view.css";
+import AlbumContent from "./_components/content";
 
 export const metadata: Metadata = {
   title: "Album",

@@ -1,11 +1,27 @@
 {
   "root": true,
-  "extends": ["next/core-web-vitals", "plugin:tailwindcss/recommended"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["simple-import-sort", "prettier"],
   "parser": "@typescript-eslint/parser",
   "rules": {
     "tailwindcss/no-custom-classname": "off",
     "react/no-unescaped-entities": "off",
     "tailwindcss/no-contradicting-classname": "off",
-    "tailwindcss/enforces-shorthand": "off"
+    "tailwindcss/enforces-shorthand": "off",
+    "simple-import-sort/imports": "error", // 强制导入语句排序
+    "prettier/prettier": "error",
+    "react/prop-types": "off",
+    "no-unknown-property": "off",
+    "no-useless-escape": "off",
+    "no-empty-character-class": "off",
+    "@typescript-eslint/no-empty-object-type": "off",
+    "react/no-unknown-property": "off"
   }
 }

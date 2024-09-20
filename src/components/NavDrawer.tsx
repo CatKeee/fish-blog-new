@@ -1,4 +1,6 @@
+import Link from "next/link";
 import * as React from "react";
+
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
@@ -10,11 +12,9 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { Input } from "./ui/input";
+import config from "@/config/app";
 
 import Icon from "./Icon";
-import Link from "next/link";
-import config from "@/config/app";
 
 const NavDrawer = () => {
   return (

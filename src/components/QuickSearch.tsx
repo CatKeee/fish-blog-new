@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import {
   CalendarIcon,
   EnvelopeClosedIcon,
@@ -9,7 +8,9 @@ import {
   PersonIcon,
   RocketIcon,
 } from "@radix-ui/react-icons";
+import * as React from "react";
 
+import { Button } from "@/components/ui/button";
 import {
   CommandDialog,
   CommandEmpty,
@@ -21,7 +22,6 @@ import {
   CommandShortcut,
 } from "@/components/ui/command";
 
-import { Button } from "@/components/ui/button";
 import Icon from "./Icon";
 
 const QuickSearch = () => {

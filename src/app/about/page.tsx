@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import DefaultLayout from "@/layouts/default";
+import React from "react";
+
 import Icon from "@/components/Icon";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Progress } from "@/components/ui/progress";
 import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
+import DefaultLayout from "@/layouts/default";
 
 export const metadata: Metadata = {
   title: "About",

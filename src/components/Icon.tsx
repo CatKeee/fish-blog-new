@@ -1,6 +1,6 @@
 import React from "react";
-// import DOMPurify from "dompurify";
 
+// import DOMPurify from "dompurify";
 import iconData, { type IconName } from "@/assets/icons/index";
 
 interface IconProps extends React.HTMLAttributes<HTMLSpanElement> {

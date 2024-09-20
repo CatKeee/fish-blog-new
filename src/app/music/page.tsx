@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import DefaultLayout from "@/layouts/default";
-import Link from "next/link";
-import Icon from "@/components/Icon";
 import Image from "next/image";
+import React from "react";
+
+import DefaultLayout from "@/layouts/default";
 
 export const metadata: Metadata = {
   title: "Music",

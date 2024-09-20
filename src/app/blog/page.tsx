@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
-import { posts } from "@/assets/posts";
-import { formatDate } from "./_utils/formatDate";
-import DefaultLayout from "@/layouts/default";
 import Link from "next/link";
+import React from "react";
+
+import { posts } from "@/assets/posts";
+import DefaultLayout from "@/layouts/default";
+
+import { formatDate } from "./_utils/formatDate";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "Here are my technical sharing and some of my life experiences.",
 };
-
-interface LogEntry {
-  id: number;
-  date: string;
-  title: string;
-  // 假设有时候条目可能还包含更详细的描述
-  description?: string;
-}
 
 const Blog = () => {
   return (

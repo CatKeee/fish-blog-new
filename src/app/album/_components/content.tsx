@@ -1,10 +1,10 @@
 "use client";
 
-import { Fancybox } from "@fancyapps/ui";
-import React, { useEffect } from "react";
-import Image from "next/image";
-
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+import { Fancybox } from "@fancyapps/ui";
+import Image from "next/image";
+import React, { useEffect } from "react";
 
 interface Props {
   albums: AlbumItem[];

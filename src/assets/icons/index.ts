@@ -1,6 +1,6 @@
 import hugeIcon from "./hugeIcon.json";
-import remixIcon from "./remixIcon.json";
 import myIcon from "./myIcon.json";
+import remixIcon from "./remixIcon.json";
 
 const allIcon = {
   ...hugeIcon,

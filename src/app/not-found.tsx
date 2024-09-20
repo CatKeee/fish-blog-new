@@ -1,5 +1,7 @@
-import Link from "next/link";
 import type { Metadata } from "next";
+import Link from "next/link";
+import React from "react";
+
 import { buttonVariants } from "@/components/ui/button";
 
 export const metadata: Metadata = {

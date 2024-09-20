@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
@@ -10,10 +11,10 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { Input } from "./ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 import Icon from "./Icon";
+import { Input } from "./ui/input";
 
 const GlobalSearch = () => {
   return (
